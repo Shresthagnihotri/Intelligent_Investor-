@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intelligent Investor — UP Land Lookup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><div class="logo">II</div><div><strong>Intelligent Investor</strong><small>Uttar Pradesh Land Intelligence</small></div></div><span class="pill">Official-source workflow</span></header>
+<main>
+<section class="hero"><span class="eyebrow">REAL ESTATE DUE DILIGENCE</span><h1>Find land information<br><em>from one place.</em></h1><p>Select the administrative location and enter the Gata / Plot number. No Khasra or Khata number is required.</p></section>
+<section class="panel">
+<div class="panel-title"><span class="step">1</span><div><h2>Property details</h2><p>Choose the location in order.</p></div></div>
+<div class="fields">
+<label>District<select id="district"><option value="">Select District</option></select></label>
+<label>Tehsil<select id="tehsil" disabled><option value="">Select Tehsil</option></select></label>
+<label>Village<select id="village" disabled><option value="">Select Village</option></select></label>
+<label>Gata / Plot No.<input id="gata" placeholder="Enter Gata / Plot number"></label>
+</div>
+<button id="search">Search Property <span>→</span></button>
+<div id="message"></div>
+</section>
+<section id="result" class="panel result hidden"><div class="resulttop"><div><span class="eyebrow">SEARCH REQUEST</span><h2>Property lookup</h2></div><span class="pill amber">Official verification</span></div><div id="summary"></div><div class="notice"><strong>Next step</strong><p>The selected identifiers are ready for the official land-record lookup. Actual ownership and land-record values must be returned by the authorised government service; this application never invents them.</p></div><div class="sources"><a href="https://upbhulekh.gov.in/bhulekh/" target="_blank"><strong>UP Bhulekh</strong><small>Land records / Khatauni</small>↗</a><a href="https://www.igrsup.gov.in/igrsup/defaultAction" target="_blank"><strong>UP IGRSUP</strong><small>Registration & property services</small>↗</a></div></section>
+</main>
+<footer>Intelligent Investor · Uttar Pradesh</footer>
+<script src="app.js"></script>
+</body></html>
